@@ -4,9 +4,20 @@ import java.util.LinkedList;
 
 import biblioteka.Autor;
 import biblioteka.Knjiga;
-
+/**
+ * Interfejs koji predstavlja biblioteku
+ * 
+ * @author Ivana
+ *
+ */
 public interface BibliotekaInterface {
-	
+	/**
+	 * Dodaje novu knjigu u biblioteku
+	 * 
+	 * @param knjiga Knjiga koja se dodaje
+	 * @throws java.lang.NullPointerException ako je uneta knjiga null
+	 * @throws java.lang.RuntimeException ako je uneta knjiga koja vec postoji
+	 */
 	public void dodajKnjigu(Knjiga knjiga);
 	
 	public void obrisiKnjigu(Knjiga knjiga);
