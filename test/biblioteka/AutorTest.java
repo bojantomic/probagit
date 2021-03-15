@@ -40,6 +40,7 @@ class AutorTest {
 	void testSetIme() {
 		a.setIme("Pera");
 		assertEquals("Pera",a.getIme());
+		
 	}
 
 	@Test
